@@ -127,7 +127,15 @@ const VdrProps = {
   lockAspectRatio: {
     type: Boolean,
     default: false
-  }
+  },
+  parentScaleX:{
+    type:Number,
+    default:1
+  },
+  parentScaleY:{
+    type:Number,
+    default:1
+  },
 }
 
 const emits = [
