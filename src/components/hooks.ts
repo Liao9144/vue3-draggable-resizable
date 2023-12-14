@@ -364,6 +364,8 @@ export function initDraggableContainer(
     emit("dragging", { x: setLeft(newLeft), y: setTop(newTop) });
   };
   const handleDown = (e: HandleEvent) => {
+    e.stopPropagation();
+    e.preventDefault();
     if (!draggable.value) return;
     setDragging(true);
     lstX = x.value;
